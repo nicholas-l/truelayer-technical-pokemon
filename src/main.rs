@@ -7,9 +7,6 @@ use tracing::Level;
 use tracing_subscriber::FmtSubscriber;
 use warp::Filter;
 
-// TODO add logging.
-// TODO: 404 handler
-// E2E with mock pokemon api
 #[tokio::main]
 async fn main() {
     // Create the tracing subscriber to log to stdout.

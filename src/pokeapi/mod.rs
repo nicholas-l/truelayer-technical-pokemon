@@ -1,3 +1,7 @@
+//! PokeAPI
+//! This module provides a simple interface to `PokeAPI.co`.
+//! It is setup to use a trait object to allow for mocking.
+
 mod models;
 
 use async_trait::async_trait;
@@ -79,12 +83,13 @@ impl PokeApi {
 
 #[async_trait]
 impl PokeApiTrait for PokeApi {
+
+    /// Calls the PokeAPI and returns a Pokemon struct based on the name provided.
     async fn get_information(&self, name: &str) -> Result<Pokemon, PokemonError> {
         let url = self
             .endpoint
             .join(&format!("pokemon-species/{}", name))
             .unwrap();
-        println!("Url: {}", url);
         info!("Fetching pokemon information from {}", url);
         // Call Pokeapi to get the pokemon information;
         let response = reqwest::get(url).await?;

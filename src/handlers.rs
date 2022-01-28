@@ -1,3 +1,5 @@
+//! Handler module
+//! This is the handlers of the API for the server.
 use crate::{
     context::Context,
     funtranslation::{FunTranslationTrait, TranslationError, TranslationMethod},
