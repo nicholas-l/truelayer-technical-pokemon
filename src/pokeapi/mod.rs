@@ -83,7 +83,6 @@ impl PokeApi {
 
 #[async_trait]
 impl PokeApiTrait for PokeApi {
-
     /// Calls the PokeAPI and returns a Pokemon struct based on the name provided.
     async fn get_information(&self, name: &str) -> Result<Pokemon, PokemonError> {
         let url = self
