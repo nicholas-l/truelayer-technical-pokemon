@@ -2,7 +2,7 @@
 
 This can either be run using either Rust (1) or via Docker (2)
 
-## Running via Rust
+## Running via Rust <img src="https://raw.githubusercontent.com/github/explore/master/topics/rust/rust.png" height="20" style="max-width: 100%; vertical-align: middle;">
 
 Install Rust using [rustup](https://rustup.rs/)
 
@@ -20,7 +20,7 @@ Example URLs:
 - http://127.0.0.1:3030/pokemon/pikachu
 - http://127.0.0.1:3030/pokemon/translated/pikachu
 
-## Running via Docker
+## Running via Docker <img src="https://raw.githubusercontent.com/github/explore/master/topics/docker/docker.png" height="20" style="max-width: 100%; vertical-align: middle;">
 
 Run `docker build --tag technical-pokemon .` to build the Docker image.
 
