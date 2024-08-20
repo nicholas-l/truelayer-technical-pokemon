@@ -8,7 +8,7 @@ edition = "2021"
 [dependencies]
 async-trait = "0.1.81"
 lazy_static = "1.5.0"
-mockall = "0.12.1"
+mockall = "0.13.0"
 percent-encoding = "2.3.1"
 reqwest = { version = "0.12.4", features = ["json"]}
 serde = { version = "1.0.208", features = ["derive"]}
