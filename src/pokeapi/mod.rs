@@ -1,6 +1,6 @@
 //! PokeAPI
 //! This module provides a simple interface to `PokeAPI.co`.
-//! It is setup to use a trait object to allow for mocking.
+//! It is setup to use a trait object to allow for mocking in tests.
 
 mod models;
 

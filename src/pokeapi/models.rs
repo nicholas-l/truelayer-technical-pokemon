@@ -1,3 +1,6 @@
+//! Models for the PokeApi that will be serialized and returned
+//!  in server response.
+
 use serde::Deserialize;
 
 #[derive(Deserialize)]

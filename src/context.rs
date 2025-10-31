@@ -1,3 +1,6 @@
+///! This module contains a context struct which is used to as a client
+///! to pokeapi and funtranslation services for the routes in the web server.
+
 use crate::{funtranslation::FunTranslationTrait, pokeapi::PokeApiTrait};
 
 #[derive(Clone)]
